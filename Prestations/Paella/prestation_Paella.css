@@ -1,0 +1,399 @@
+.nav_presta li:nth-child(2) {
+    filter: drop-shadow(0px 0px 5px #ffffff);
+} .nav_presta li:nth-child(2) a {
+    color: white;
+}
+
+/******************** FONT-PARAMETRE ********************/
+
+h1 {
+    font-family: "Lugrasimo", cursive;
+    font-size: clamp(18px, 2vw + 2.5vh, 35px);
+} h2 {
+    font-family: "Lugrasimo", cursive;
+    font-size: clamp(17px, 1.5vw + 2vh, 30px);
+} p {
+    font-family: "Quicksand", sans-serif;
+    font-size: clamp(16px, 0.4vw + 1.6vh, 25px);
+    font-weight: 450;
+    line-height: calc(20px + 1.5vmin);
+}
+
+/******************** BOUTTON / HOVER ********************/
+
+main button {
+    background-color: #C33028;
+    border: 2px solid #C33028;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+    max-width: 80%;
+    font-family: "Lugrasimo", cursive;
+    font-size: clamp(16px, 0.4vw + 1.8vh, 25px);
+}
+
+main button:hover {
+    color: #C33028;
+    background-color: transparent;
+}
+
+/******************** HEADER ********************/
+
+.triangle_top {
+    height: 50px;
+    width: 50px;
+    background-color: #D65544;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    margin-bottom: calc(30px + 5vmin);
+} 
+
+.header_presta {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    color: white;
+    background-image: url("../../images/Utilisé_dans_plusieurs_section/red_bg.webp");
+    background-position: center;
+    background-size: cover;
+} .header_presta h1, .header_presta p {
+    width: 80%;
+    z-index: 1;
+} .header_presta h1 {
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.51);
+    letter-spacing: 5px;
+} .underline_titre {
+    width: calc(100px + 2vmax);
+    max-width: 80%;
+    height: 3px;
+    margin: 20px 0;
+    background-color: #fff;
+} .header_presta p {
+    background-color: #c6342c73;
+    max-width: 653px;
+} .header_presta .triangle {
+    margin-top: 40px;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    z-index: 20;
+    cursor: pointer;
+    margin-bottom: calc(30px + 5vmin);
+    animation: scale 1s linear infinite alternate;
+} @keyframes scale {
+    from {
+        transform: scale(1); 
+    } to {
+        transform: scale(1.5); 
+    }
+}
+
+/******************** SÉPARATEUR ********************/
+
+.separateur_header_presta_into_img_sous_header {
+    position: relative;
+    top: -1px;
+    width: 100%;
+    height: calc(80px + 10vmin);
+    filter: drop-shadow(0px 22px 11px #80808087);
+    z-index: 1;
+} .separateur_header_presta_into_img_sous_header img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    overflow-y: visible;
+}
+
+/***************** IMG SOUS HEADER ******************/
+
+.img_sous_header {
+    position: relative;
+    width: 100%;
+    height: calc(180px + 20vmin);
+} .img_sous_header::before {
+    content:'';
+    bottom: 0;
+    height: 130%;
+    width: 100%;
+    border-bottom: 4px solid white;
+    position: absolute;
+    background-image: url("./images/header_prestation.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+} .location_triangle_onclick {
+    position: absolute;
+    bottom: 30%;
+    width: 50%;
+    height: 5px;
+}
+
+/***************** MAIN CONTENT ******************/
+
+.prestations {
+    background-image: url("../../images/Utilisé_dans_plusieurs_section/red_bg.webp");
+    background-size: contain;
+    background-position: center;
+}
+
+.prestation_paella {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    padding-top: calc(50px + 4vmax);
+}
+
+.bloc_paella {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: center;
+    width: 80%;
+} .bloc_paella h2 { 
+    background-color: #c4312979;
+    letter-spacing: 5px;
+} .bloc_paella .underline_titre {
+    margin: 20px 0 30px 0;
+} .bloc_img_p_paella {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+} .bloc_img_p_paella p {
+    background-color: #c4312979;
+    height: fit-content;
+} .bloc_img_p_paella img { 
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    max-height: 380px;
+    border-radius: 2vmax 2vmax 0 0;
+    filter: drop-shadow(0px 0px 5px #F2E73D);
+}
+
+.variante_paella {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: calc(120px + 4vmax);
+    padding-bottom: 120px;
+    margin-top: calc(20px + 4vmax);
+    background-color: #F2E73D;
+    color: #C33028;
+    clip-path: polygon(50% calc(2% + 2.5vw), 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
+    z-index: 1;
+} .variante_paella::before {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 98%;
+    background-color: white;
+    clip-path: polygon(50% calc(2% + 2.5vw), 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
+    z-index: -1;
+} .variante_paella::after {
+    content:'';
+    position: absolute;
+    top: 30px;
+    left: calc(-10px - 10vmax);
+    background-image: url("./images/variante_paella/floating_food.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: calc(30px + 20vmax);
+    height: calc(30px + 20vmax);
+    min-width: 100px;
+    min-height: 100px;
+    z-index: -1;
+}
+
+.variante_paella h3 {
+    font-family: "Lugrasimo", cursive;
+    font-size: clamp(17px, 1.5vw + 2vh, 30px);
+    background-color: #fff;
+    text-align: center;
+} .variante_paella ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+} .variante_paella ul .underline_titre {
+    margin: 40px 0 40px 0;
+    background-color: #F2E73D;
+} .variante_paella li {
+    font-family: "Quicksand", sans-serif;
+    font-size: clamp(16px, 0.4vw + 1.6vh, 25px);
+    font-weight: 450;
+    line-height: calc(20px + 1.5vmin);
+    list-style-type: none;
+} .variante_paella .underline_titre {
+    background-color: #C33028;
+    margin: 20px 0 60px 0;
+} .variante_paella ul li p {
+    max-width: 800px;
+} .variante_paella strong {
+    font-family: "Lugrasimo", cursive;
+}
+
+.li_paella_mariscos img {
+    float: left;
+    height: calc(60px + 10vmax);
+    max-height: 280px;
+    max-width: 95svw;
+    shape-outside: circle(50%);
+    margin-right: 1rem;
+    z-index: 1;
+} .li_paella_mariscos {
+    position: relative;
+    text-align: left;
+    background: linear-gradient(144deg,#f2e73d 0%, #ffffff 80%);
+    padding: 12px;
+    border-radius: 10px 10px 10px 10px;
+} .li_paella_mariscos p span {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.li_paella_mixta img {
+    float: right;
+    height: calc(60px + 10vmax);
+    max-height: 280px;
+    max-width: 95svw;
+    shape-outside: circle(50%);
+    margin-left: 1rem;
+    z-index: 1;
+} .li_paella_mixta {
+    position: relative;
+    text-align: right;
+    background: linear-gradient(225deg,#f2e73d 0%, #ffffff 80%);
+    padding: 12px;
+    border-radius: 10px 10px 10px 10px;
+} .li_paella_mixta p span {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.li_paella_mariscos::before, .li_paella_mixta::before {
+    content:'';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(50px + 8vmax);
+    height: calc(50px + 8vmax);
+    filter: opacity(0.5);
+    z-index: -1;
+} .li_paella_mariscos::before {
+    background-image: url("images/variante_paella/Paella_Mariscos.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: calc(-45px - 10vmax);
+} .li_paella_mixta::before {
+    background-image: url("images/variante_paella/Paella_Mixta.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: calc(-45px - 10vmax);
+}
+
+.img_advantage {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+} .img_advantage img {
+    object-fit: contain;
+    max-width: 98%;
+}
+
+.variante_paella button {
+    width: 80%;
+}
+
+/***************** MEDIA QUERY *******************/ 
+
+@media (hover: none) {
+    .img_sous_header::before {
+        background-attachment: initial;
+    } .variante_paella button:hover {
+        background-color: #C33028;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    .li_paella_mariscos img, .li_paella_mixta img {
+        float: none;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    } .li_paella_mixta, .li_paella_mariscos {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .variante_paella::after {
+        top: 0;
+        left: calc(-10px - 10vmax);
+        width: calc(100px + 20vmax);
+        height: calc(100px + 20vmax);
+    }
+
+    .bloc_img_p_paella {
+        display: flex;
+        flex-direction: row;
+        max-width: 1200px;
+        column-gap: 40px;
+    } .bloc_img_p_paella p {
+        width: 50%;
+        text-align: left;
+        align-self: center;
+    } .bloc_img_p_paella img { 
+        align-self: flex-start;
+        width: 50%;
+        border-radius: 2vmax 0 0 2vmax;
+    } .bloc_img_p_paella p::first-letter {
+        padding-left: 10px;
+    }
+
+    .variante_paella ul .underline_titre {
+        margin: 60px 0 60px 0;
+    }
+
+    .li_paella_mixta img, .li_paella_mariscos img { 
+        height: calc(50px + 15vmax);
+    } .variante_paella ul li p {
+        max-width: 900px;
+    } .li_paella_mariscos {
+        border-radius: 40% 10px 10px 40%;
+    } .li_paella_mixta {
+        border-radius: 10px 40% 40% 10px;
+    }
+
+    .img_advantage {
+        margin: 40px 0 60px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 80px;
+        width: 80%;
+    }
+
+    .variante_paella button {
+        width: 42%;
+    }
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- <a href="http://www.freepik.com">Some images may be Designed by Freepik Designer / Freepik</a> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+    name="description"
+    content="Découvrez nos services de traiteur paella pour vos événements en Gironde. Des plats authentiques préparés avec soin par Alejandro Gimenez."
+  />
+  <meta name="robots" content="index, follow" />
+  <meta
+    property="og:title"
+    content="Prestations Paella - AG Paella & Flamenco - Alejandro Gimenez"
+  />
+  <meta
+    property="og:description"
+    content="Découvrez nos services de traiteur paella pour vos événements en Gironde. Des plats authentiques préparés avec soin par Alejandro Gimenez."
+  />
+  <meta property="og:image" content="https://i.imgur.com/wZekl8A.png" />
+    <link
+      rel="shortcut icon"
+      href="../../images/Logo_et_separateur/myFavicon.svg"
+    />
+    <link href="../../nav.css" rel="stylesheet" />
+    <link href="../../footer.css" rel="stylesheet" />
+    <link href="prestation_Paella.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="../../nav.js" defer></script>
+
+    <title>Traîteur Paella | AG - Paella et Flamenco à Domicile</title>
+  </head>
+
+  <body>
+    <!-- ********************************* -->
+    <header class="header_nav">
+      <aside class="above_nav_coordinate">
+        <div class="above_nav_coordinate_container_for_border">
+          <li><i>&#x2706;</i>06.56.98.49.02</li>
+          <li><i>&#x2709;</i>ginofama@hotmail.com</li>
+        </div>
+      </aside>
+      <nav>
+        <a class="logo_href_menu_burger" href="../../index.html"></a>
+        <button
+          class="nav_bouton_reservez_mode_burger"
+          onclick="window.location.href='../../Contact/contact.html';"
+        >
+          Réservez
+        </button>
+        <div class="container_button">
+          <button onclick="toggleMenuBurger()" class="btn_burger">
+            <div class="ligne_1"></div>
+            <div class="ligne_2"></div>
+            <div class="ligne_3"></div>
+          </button>
+        </div>
+        <div class="nav_links">
+          <li><a class="logo_href" href="../../index.html"></a></li>
+          <li><a href="../../A_Propos/a_propos.html">A Propos</a></li>
+          <ul class="nav_presta">
+            <span onclick="prestaMenuToggle()">Prestations</span>
+            <li><a href="./prestation_Paella.html">Traiteur de Paella</a></li>
+            <li>
+              <a href="../Flamenco/prestation_Flamenco.html"
+                >Concert Flamenco</a
+              >
+            </li>
+          </ul>
+          <li><a href="../../Galerie/galerie.html">Galerie</a></li>
+          <li><a href="../../Contact/contact.html">Contact</a></li>
+          <li>
+            <button
+              class="nav_bouton_reservez_mode_non_burger"
+              onclick="window.location.href='../../Contact/contact.html';"
+            >
+              Réservez
+            </button>
+          </li>
+        </div>
+      </nav>
+    </header>
+    <!-- ********************************* -->
+    <main>
+      <header class="header_presta">
+        <div class="triangle_top"></div>
+        <h1>Découvrez Mes Services</h1>
+        <div class="underline_titre"></div>
+        <p>
+          Chez <strong>AG Paella et Flamenco</strong>, je proposes des
+          prestations uniques à Domicile pour rendre vos événements mémorables
+          sur toute la Gironde. Que vous souhaitiez ravir vos invités avec un
+          service de traiteur de paella ou les surprendre avec un spectacle de
+          flamenco captivant, j'ai ce qu'il vous faut.
+        </p>
+        <div class="triangle" onclick="window.location.href='#service';"></div>
+      </header>
+      <!-- ********************************* -->
+      <div class="separateur_header_presta_into_img_sous_header">
+        <img
+          srcset="
+            ../../images/Logo_et_separateur/Divider/divider-1200.webp 1197w,
+            ../../images/Logo_et_separateur/Divider/divider-1920.webp 1920w,
+            ../../images/Logo_et_separateur/Divider/divider-2560.webp 2555w
+          "
+          sizes=" (max-width: 1500px) 1197px,
+                        (max-width: 2250px) 1920px,
+                        2555px"
+          src="../../images/Logo_et_separateur/Divider/divider-2560.webp"
+          alt="Séparateur pour changer de section du site"
+        />
+      </div>
+      <!-- ********************************* -->
+      <div class="img_sous_header">
+        <div class="location_triangle_onclick" id="service"></div>
+      </div>
+      <!-- ********************************* -->
+      <section class="prestations">
+        <article class="prestation_paella">
+          <div class="bloc_paella">
+            <h2>Service de Traiteur Paella</h2>
+            <div class="underline_titre"></div>
+            <div class="bloc_img_p_paella">
+              <img src="./images/paella.webp" alt="Une Paella" />
+              <p>
+                Offrez à vos invités une expérience culinaire authentique avec
+                mes paellas préparées sur place. Utilisant les meilleurs
+                ingrédients et respectant les traditions espagnoles, chaque
+                paella est un véritable voyage gustatif. <br /><br />
+                Mes services de traiteur sont disponibles à domicile sur toute
+                la Gironde pour divers types d'événements, qu'ils soient privés
+                ou professionnels, à partir de 15 personnes.
+              </p>
+            </div>
+          </div>
+          <div class="variante_paella">
+            <h3>Variantes de Paella</h3>
+            <div class="underline_titre"></div>
+            <ul>
+              <li class="li_paella_mariscos">
+                <img
+                  src="./images/variante_paella/Paella_Mariscos.png"
+                  alt="Paella de Mariscos"
+                />
+                <strong>Paella de Mariscos</strong>
+                <br />
+                <br />
+                <p>
+                  <span>Ingrédients</span><br />Riz, fruits de mer (moules,
+                  crevettes, calamars), poisson, poivrons, tomates, huile
+                  d'olive, ail, persil, safran, fumet de poisson.
+                </p>
+              </li>
+              <div class="underline_titre"></div>
+              <li class="li_paella_mixta">
+                <img
+                  src="./images/variante_paella/Paella_Mixta.png"
+                  alt="Paella Mixta"
+                />
+                <strong>Paella Mixta</strong>
+                <br />
+                <br />
+                <p>
+                  <span>Ingrédients</span><br />Poulet, fruits de mer (moules,
+                  crevettes), haricots verts, poivrons, tomates, riz, huile
+                  d'olive, safran, fumet de poisson.
+                </p>
+              </li>
+            </ul>
+            <div class="img_advantage">
+              <img
+                src="./images/avantage/img_advantages_1.png"
+                alt="Préparation sur place pour une fraîcheur maximale."
+              />
+              <img
+                src="./images/avantage/img_advantages_2.png"
+                alt="Ingrédiants Frais et de Qualité."
+              />
+            </div>
+            <button
+              onclick="window.location.href='../../Contact/contact.html';"
+            >
+              Réservez
+            </button>
+          </div>
+        </article>
+      </section>
+      <!-- ********************************* -->
+      <section class="section_5"></section>
+      <!-- ********************************* -->
+    </main>
+    <footer>
+      <h2><span>Élevons votre</span>Évenement</h2>
+      <p>
+        Contactez-moi dès aujourd'hui pour apporter la passion de la musique
+        flamenco et / ou la saveur d'une authentique paella à votre fête.
+      </p>
+      <button onclick="window.location.href='../../Contact/contact.html';">
+        Contactez-moi
+      </button>
+      <small
+        >Copyright <i>&#169;</i> 2024 - AG - Paella et Flamenco<br />Made by
+        Zairth</small
+      >
+    </footer>
+    <!-- ********************************* -->
+  </body>
+</html>

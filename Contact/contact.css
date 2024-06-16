@@ -1,0 +1,338 @@
+
+.nav_links li:nth-child(5) {
+    filter: drop-shadow(0px 0px 5px #ffffff);
+} .nav_links li:nth-child(5) a {
+    color: white;
+}
+
+/******************** FONT-PARAMETRE ********************/
+
+h1 {
+    font-family: "Lugrasimo", cursive;
+    font-size: clamp(18px, 2vw + 2.5vh, 35px);
+} h2 {
+    font-family: "Lugrasimo", cursive;
+    font-size: clamp(17px, 1.5vw + 2vh, 30px);
+} p, form {
+    font-family: "Quicksand", sans-serif;
+    font-size: clamp(16px, 0.4vw + 1.6vh, 25px);
+    font-weight: 450;
+    line-height: calc(20px + 1.5vmin);
+    color: #C33028;
+}
+
+/******************** BOUTTON / HOVER ********************/
+
+main button {
+    background-color: #C33028;
+    border: 2px solid #C33028;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+    max-width: 80%;
+    font-family: "Lugrasimo", cursive;
+    font-size: clamp(16px, 0.4vw + 1.8vh, 25px);
+}
+
+main button:hover {
+    color: #C33028;
+    background-color: transparent;
+}
+
+/************** HEADER - CONTACT **************/
+
+main header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    color: #C33028;
+} main header::before {
+    content:'';
+    position: absolute;
+    background-image: url("../images/Section_5_Img_Avant_Footer/img_before_footer.webp");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: opacity(0.25);
+    width: 100%;
+    height: 145%;
+    z-index: -1;
+}
+
+main header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 20px;
+    width: 80%;
+    max-width: 750px;
+    padding: calc(60px + 3vmax) 0;
+} main header div h1 {
+    text-decoration: underline;
+} main header div p {
+    font-weight: 550;
+}
+
+/************ SECTION - FORMULAIRE ************/
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    row-gap: 100px;
+}
+
+main section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 30px;
+    row-gap: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.33);
+}
+
+section .input_nom_prenom, section .input_phone_mail {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.input_nom, .input_prenom, .input_phone, .input_mail, .input_textarea {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 100%;
+} .input_textarea {
+    width: 100%;
+} form input, form textarea {
+    outline: none;
+    border: none;
+    background-color: #F2F1F6;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: "Quicksand", sans-serif;
+    font-size: clamp(15px, 0.1vw + 1.3vh, 18px);
+    font-weight: 450;
+    color: #C33028;
+} form textarea {
+    min-height: 200px;
+    resize: none;
+}
+
+form button {
+    width: 100%;
+    max-width: 500px;
+}
+
+/********** SECTION - CARTE / COORD ***********/
+
+section aside {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #C33028;
+    background-color: #F2F1F6;
+    padding: 30px;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.33);
+    margin-bottom: 100px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+section aside .map {
+    max-width: 100%;
+    z-index: 1;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+} section aside .map:hover {
+    transform: scale(1.1);
+}
+.h2_logo {
+    position: relative;
+}
+.h2_logo img {
+    display: none;
+} section aside .h2_logo h2 {
+    text-align: center;
+    margin-bottom: 30px;
+} section aside .h2_logo h2 span {
+    display: block;
+    font-family: "Quicksand", sans-serif;
+    font-size: clamp(16px, 0.4vw + 1.6vh, 25px);
+    margin-bottom: 5px;
+}
+
+/************* SECTION - FOOTER ***************/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    background-image: url("images/red_bg.webp");
+    background-size: cover;
+    background-position: top;
+    border-top: 35px solid #F2E73D;
+    padding-top: 60px;
+    gap: 30px;
+    color: white;
+}
+
+footer img {
+    height: 130px;
+    width: auto;
+    object-fit: contain;
+} footer h2 {
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+footer img, .coordonne, .navigation, footer small {
+    max-width: 80%;
+} .coordonne, .navigation, footer small {
+    background-color: #c43129bb;
+}
+
+.coordonne ul li, .navigation ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 10px 0;
+} .navigation ul li {
+    padding: 5px 0;
+}
+
+.coordonne ul li::before {
+    content:'';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-image: url("images/coordonnee_footer/phone.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+} .coordonne ul li:nth-child(2)::before {
+    background-image: url("images/coordonnee_footer/mail.webp");
+}
+
+footer ul li, footer ul li a {
+    font-family: "Quicksand", sans-serif;
+    font-size: clamp(16px, 0.4vw + 1.6vh, 25px);
+    font-weight: 450;
+    line-height: calc(20px + 1.5vmin);
+    list-style-type: none;
+} footer ul li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li a::before {
+    content:'';
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+} footer ul li a:hover::before {
+    transform: scaleX(1);
+}
+
+footer small {
+    font-family: "Quicksand", sans-serif;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/***************** MEDIA QUERY ****************/
+
+@media (hover: none) {
+    main header::before {
+        background-attachment: initial;
+    }
+    section aside .map:hover {
+        transform: scale(1);
+        cursor: initial;
+    }
+    footer ul li a:hover::before {
+        transform: scaleX(0);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section aside {
+        column-gap: 30px;
+    } section aside .map {
+        width: 65%;
+    } .h2_logo {
+        padding-top: 20px;
+        width: 28%;
+        order: 2;
+    } .h2_logo img {
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        right: -25%;
+        max-width: 150%;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+        row-gap: 60px;
+        padding-top: 80px;
+    } .coordonne ul li, .navigation ul li {
+        line-height: 40px;
+    }
+
+    footer img {
+        order: 2;
+        height: 200px;
+        padding-left: 40px;
+    } footer .coordonne {
+        order: 3;
+    } footer .navigation {
+        order: 1;
+    } footer small {
+        order: 4;
+        background-color: transparent;
+    }
+
+    .navigation ul li {
+        align-items: flex-start;
+    }
+
+    .coordonne ul li {
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        column-gap: 20px;
+    } .coordonne ul li::before {
+        margin-bottom: 0;
+    }
+}

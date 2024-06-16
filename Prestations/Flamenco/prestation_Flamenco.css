@@ -1,0 +1,426 @@
+.nav_presta li:nth-child(3) {
+    filter: drop-shadow(0px 0px 5px #ffffff);
+} .nav_presta li:nth-child(3) a {
+    color: white;
+}
+
+/******************** FONT-PARAMETRE ********************/
+
+h1 {
+    font-family: "Lugrasimo", cursive;
+    font-size: clamp(18px, 2vw + 2.5vh, 35px);
+} h2 {
+    font-family: "Lugrasimo", cursive;
+    font-size: clamp(17px, 1.5vw + 2vh, 30px);
+} p {
+    font-family: "Quicksand", sans-serif;
+    font-size: clamp(16px, 0.4vw + 1.6vh, 25px);
+    font-weight: 450;
+    line-height: calc(20px + 1.5vmin);
+}
+
+/******************** BOUTTON / HOVER ********************/
+
+main button {
+    background-color: #C33028;
+    border: 2px solid #C33028;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+    max-width: 80%;
+    font-family: "Lugrasimo", cursive;
+    font-size: clamp(16px, 0.4vw + 1.8vh, 25px);
+}
+
+main button:hover {
+    color: #C33028;
+    background-color: transparent;
+}
+
+/******************** HEADER ********************/
+
+.triangle_top {
+    height: 50px;
+    width: 50px;
+    background-color: #D65544;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    margin-bottom: calc(30px + 5vmin);
+} 
+
+.header_presta {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    color: white;
+    background-color: #F2E73D;
+    clip-path: polygon(100% 0, 100% calc(98% - 2.5vw), 50% 100%, 0 calc(98% - 2.5vw), 0 0);
+    padding-bottom: calc(120px + 4vmax);
+} .header_presta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 98%;
+    background-image: url("../../images/Utilisé_dans_plusieurs_section/red_bg.webp");
+    background-position: top;
+    background-size: contain;
+    clip-path: polygon(100% 0, 100% calc(98% - 2.5vw), 50% 100%, 0 calc(98% - 2.5vw), 0 0);
+    z-index: -1;
+}
+
+.header_presta h1, .header_presta p:nth-child(4) {
+    width: 80%;
+    z-index: 1;
+} .header_presta h1 {
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.51);
+    letter-spacing: 5px;
+} .underline_titre {
+    width: calc(100px + 2vmax);
+    max-width: 80%;
+    height: 3px;
+    margin: 20px 0;
+    background-color: #fff;
+} .header_presta p {
+    background-color: #c6342c73;
+    max-width: 653px;
+} .header_presta .triangle {
+    margin-top: 40px;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    z-index: 20;
+    cursor: pointer;
+    margin-bottom: calc(30px + 5vmin);
+    animation: scale 1s linear infinite alternate;
+} @keyframes scale {
+    from {
+        transform: scale(1); 
+    } to {
+        transform: scale(1.5); 
+    }
+}
+
+/******************** SÉPARATEUR ********************/
+
+.separateur_header_presta_into_img_sous_header {
+    position: relative;
+    top: -1px;
+    width: 100%;
+    height: calc(80px + 10vmin);
+    filter: drop-shadow(0px 22px 11px #80808087);
+    z-index: 1;
+} .separateur_header_presta_into_img_sous_header img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    overflow-y: visible;
+}
+
+/***************** IMG SOUS HEADER ******************/
+
+.img_sous_header {
+    position: relative;
+    width: 100%;
+    height: calc(180px + 20vmin);
+} .img_sous_header::before {
+    content:'';
+    bottom: 0;
+    left: 0;
+    height: 130%;
+    width: 100%;
+    border-bottom: 4px solid white;
+    position: absolute;
+    background-image: url("./images/header_prestation.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+} .location_triangle_onclick {
+    position: absolute;
+    bottom: 30%;
+    width: 50%;
+    height: 5px;
+}
+
+/***************** MAIN CONTENT ******************/
+
+.header_flamenco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: calc(50px + 4vmax);
+    max-width: 80%;
+} .bloc_img_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    padding-top: 20px;
+    max-width: 1400px;
+} .bloc_img_text p {
+    max-width: none;
+} .img_header_flamenco {
+    width: 100%;
+} .img_header_flamenco img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 2vmax 2vmax 0 0;
+    filter: drop-shadow(0px 0px 5px #F2E73D);
+}
+
+/* MAIN CONTENT (Partie Texte) */
+
+.main_container h3 {
+    font-family: "Lugrasimo", cursive;
+    font-size: clamp(17px, 1.5vw + 2vh, 30px);
+    text-align: center;
+    width: fit-content;
+    max-width: 80%;
+    background-color: #ffffffe8;
+} .main_container p {
+    text-align: center;
+    width: 80%;
+    max-width: 750px;
+    margin-bottom: 40px;
+    background-color: #ffffffe8;
+}
+
+.main_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: calc(40px + 2vmax);
+    color: #C33028;
+} .main_container .underline_titre {
+    background-color: #C33028;
+}
+
+.main_container img:nth-child(1) {
+    padding-bottom: calc(20px + 2vmax);
+    max-width: 80%;
+}
+
+/* Partie Vidéo */
+
+.video_perspective_container {
+    perspective: none;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+} .video_preserve3d_container {
+    transform-style: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    margin-bottom: 60px;
+    height: auto;
+    width: 561px;
+    max-width: 100%;
+} .container_video {
+    position: relative;
+    height: 100%;
+    width: 100%;
+} .container_video_1,
+.container_video_2,
+.container_video_3 {
+    transform: none;
+}
+
+.container_video::before {
+    content:'';
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    height: calc(20px + 6vmin);
+    width: calc(20px + 6vmin);
+    background-size: contain;
+    background-position: center;
+    z-index: 2;
+} .container_video_1::before {
+    background-image: url("images/video_1/chiffre_1.png");
+} .container_video_2::before {
+    background-image: url("images/video_2/chiffre_2.png");
+} .container_video_3::before {
+    background-image: url("images/video_3/chiffre_3.png");
+} .container_video_1::before, .container_video_3::before {
+    left: -20px;
+}
+
+.video {
+    height: 100%;
+    width: 100%;
+}
+
+.arrow_presta_flamenco {
+    display: none;
+    position: absolute;
+}
+
+/* Avantages */
+
+.main_container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    list-style-type: none;
+    max-width: 750px;
+}
+.main_container ul li {
+    font-family: "Quicksand", sans-serif;
+    font-size: clamp(16px, 0.4vw + 1.6vh, 25px);
+    font-weight: 450;
+    line-height: calc(20px + 1.5vmin);
+} .main_container ul li strong {
+    position: relative;
+    font-size: clamp(16px, 0.6vw + 1.8vh, 27px);
+} .main_container button {
+    width: 80%;
+    max-width: 900px;
+}
+
+.main_container ul li strong::before {
+    content:'';
+    display: inline-block;
+    background-image: url("images/check.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    width: calc(18px + 0.1vmin);
+    height: calc(14px + 0.1vmin);
+}
+
+/***************** MEDIA QUERY *******************/ 
+
+@media (hover: none) {
+    .img_sous_header::before {
+        background-attachment: initial;
+    }
+    .arrow_presta_flamenco:hover {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .bloc_img_text {
+        flex-direction: row;
+        align-items: flex-start;
+        row-gap: none;
+        column-gap: 25px;
+    } .bloc_img_text p {
+        align-self: center;
+        text-align: left;
+        width: 45%;
+    } .bloc_img_text p::first-letter {
+        padding-left: 10px;
+    } .img_header_flamenco {
+        display: flex;
+        justify-content: flex-end;
+        width: 45%;
+        height: 100%;
+    } .img_header_flamenco img {
+        object-fit: cover;
+        min-height: 400px;
+        max-height: 450px;
+        height: 100%;
+        width: 100%;
+        max-width: none;
+        border-radius: 50px 0 0 50px;
+    }
+
+    /* Triangle 3d - vidéo */
+
+    .video_perspective_container {
+        position: relative;
+        align-items: center;
+        perspective: 2000px;
+        width: 830px;
+        height: 670px;
+    } .video_preserve3d_container {
+        transform-style: preserve-3d;
+        row-gap: none;
+        margin-bottom: none;
+        height: 480px;
+        transition: all 0.5s ease-in-out;
+    } .container_video {
+        position: absolute;
+        border: 10px solid #C33028;
+        border-radius: 10px;
+        z-index: 1;
+    }
+    
+    .container_video_1 {
+        transform: translateZ(161.5px);
+    } .container_video_2 {
+        transform: rotateY(120deg) translateZ(161.5px);
+    } .container_video_3 {
+        transform: rotateY(-120deg) translateZ(161.5px);
+    }
+
+    .video {
+        object-fit: cover;
+    }
+
+    .container_video::before { /* Chiffre */
+        left: 50%;
+        transform: translateX(-50%);
+        top: -40px;
+    }
+
+    .arrow_presta_flamenco {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 3rem;
+        cursor: pointer;
+        transition: font-size 0.2s ease-in-out;
+    } .arrow_presta_flamenco:hover {
+        font-size: 4rem;
+    } .arrow_presta_flamenco::selection {
+        background-color: transparent;
+    } .arrow-left_flamenco {
+        left: -20px;
+    } .arrow-right_flamenco {
+        right: -20px;
+    } 
+
+    /* Avantages */
+
+    .main_container ul li strong::before {
+        width: calc(20px + 0.6vmin);
+        height: calc(16px + 0.6vmin);
+    }
+
+    .main_container ul {
+        flex-direction: row;
+        align-items: flex-start;
+        column-gap: 20px;
+        width: 80%;
+        max-width: 900px;
+    }
+    .main_container ul li {
+        flex: 1;
+        padding: 20px;
+        border-inline: 2px solid red;
+        border-radius: 20px 20px 0 0;
+    } .main_container ul li:nth-child(1) {
+        background: linear-gradient(144deg,#f2e73d 0%, #ffffff 80%);
+    } .main_container ul li:nth-child(5) {
+        background: linear-gradient(225deg,#f2e73d 0%, #ffffff 80%);
+    }
+
+    .main_container ul .underline_titre {
+        display: none;
+    }
+}

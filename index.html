@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- <a href="http://www.freepik.com">Some images may be Designed by Freepik Designer / Freepik</a> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Bienvenue sur le site d'Alejandro Gimenez, traiteur de Paella et artiste de Flamenco en Gironde. Découvrez ses prestations de traiteur de Paella et d'animation Flamenco pour vos événements."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Accueil - AG Paella & Flamenco - Alejandro Gimenez"
+    />
+    <meta
+      property="og:description"
+      content="Bienvenue sur le site d'Alejandro Gimenez, traiteur de Paella et artiste de Flamenco en Gironde. Découvrez ses prestations de traiteur de Paella et d'animation Flamenco pour vos événements."
+    />
+    <meta property="og:image" content="https://i.imgur.com/wZekl8A.png" />
+    <link
+      rel="shortcut icon"
+      href="./images/Logo_et_separateur/myFavicon.svg"
+    />
+    <link href="index.css" rel="stylesheet" />
+    <link href="nav.css" rel="stylesheet" />
+    <link href="footer.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="script.js" defer></script>
+    <script src="nav.js" defer></script>
+
+    <title>AG - Paella et Flamenco à Domicile</title>
+  </head>
+
+  <body>
+    <!-- ********************************* -->
+    <header class="header_nav">
+      <aside class="above_nav_coordinate">
+        <div class="above_nav_coordinate_container_for_border">
+          <li><i>&#x2706;</i>06.56.98.49.02</li>
+          <li><i>&#x2709;</i>ginofama@hotmail.com</li>
+        </div>
+      </aside>
+      <nav>
+        <a class="logo_href_menu_burger" href="index.html"></a>
+        <button
+          class="nav_bouton_reservez_mode_burger"
+          onclick="window.location.href='./Contact/contact.html';"
+        >
+          Réservez
+        </button>
+        <div class="container_button">
+          <button onclick="toggleMenuBurger()" class="btn_burger">
+            <div class="ligne_1"></div>
+            <div class="ligne_2"></div>
+            <div class="ligne_3"></div>
+          </button>
+        </div>
+        <div class="nav_links">
+          <li><a class="logo_href" href="index.html"></a></li>
+          <li><a href="./A_Propos/a_propos.html">A Propos</a></li>
+          <ul class="nav_presta">
+            <span onclick="prestaMenuToggle()">Prestations</span>
+            <li>
+              <a href="./Prestations/Paella/prestation_Paella.html"
+                >Traiteur de Paella</a
+              >
+            </li>
+            <li>
+              <a href="./Prestations/Flamenco/prestation_Flamenco.html"
+                >Concert Flamenco</a
+              >
+            </li>
+          </ul>
+          <li><a href="./Galerie/galerie.html">Galerie</a></li>
+          <li><a href="./Contact/contact.html">Contact</a></li>
+          <li>
+            <button
+              class="nav_bouton_reservez_mode_non_burger"
+              onclick="window.location.href='./Contact/contact.html';"
+            >
+              Réservez
+            </button>
+          </li>
+        </div>
+      </nav>
+    </header>
+    <!-- ********************************* -->
+    <main>
+      <!-- ********************************* -->
+      <section class="landing_page">
+        <div class="illus-left-landing_page"></div>
+        <div class="illus-right-landing_page"></div>
+        <h1 class="titre_h1_paella_flamenco_landing_page">
+          Traîteur de Paella
+          <br /><i class="separateur_h1_landing_page">&#x203B;</i><br />
+          Musicien Flamenco
+        </h1>
+        <h2 class="sous_titre_h2_landing_page">
+          Plongez votre événement dans la passion de la musique flamenco et le
+          goût d'une authentique paella à Domicile<br /><br />
+          AG - Paella & Flamenco<br />
+          <small>* Disponible sur toute la gironde</small>
+        </h2>
+        <div class="button_and_fleche">
+          <div class="fleche_gauche_button_landing_page"></div>
+          <button onclick="window.location.href='./Contact/contact.html';">
+            Réservez
+          </button>
+          <div class="fleche_droite_button_landing_page"></div>
+        </div>
+      </section>
+      <!-- ********************************* -->
+      <div class="separateur_section1_to_section2">
+        <img
+          srcset="
+            ./images/Logo_et_separateur/Divider/divider-1200.webp 1197w,
+            ./images/Logo_et_separateur/Divider/divider-1920.webp 1920w,
+            ./images/Logo_et_separateur/Divider/divider-2560.webp 2555w
+          "
+          sizes=" (max-width: 1500px) 1197px,
+                  (max-width: 2250px) 1920px,
+                  2555px"
+          src="./images/Logo_et_separateur/Divider/divider-1920.webp"
+          alt="Séparateur pour changer de section du site"
+        />
+      </div>
+      <!-- ********************************* -->
+      <section class="section_2">
+        <article class="section_2_a_propos">
+          <h2>Découvrez mon Histoire</h2>
+          <p>
+            AG - Paella et Flamenco propose une fusion de la musique flamenco et
+            du savoir-faire traditionnel en matière de paella, offrant une
+            expérience unique en associant talent musical et héritage culinaire.
+          </p>
+          <button onclick="window.location.href='./A_Propos/a_propos.html';">
+            En savoir Plus
+          </button>
+        </article>
+        <article class="section_2_grid_after_apropos">
+          <h2 class="section_2_h2">
+            Surprenez vos invités avec une paella authentique et/ ou une soirée
+            flamenco captivante à Domicile !
+          </h2>
+          <div class="section_2_h2_tiret_underline"></div>
+          <aside class="section_2_img_events">
+            <h3>En quelques images</h3>
+            <i class="arrowImg_left">&#x2039;</i>
+            <i class="arrowImg_right">&#x203A;</i>
+            <div class="section_2_container_img">
+              <img
+                src="./images/Section_2_A_propos/paella_1.webp"
+                alt="Une paella"
+              />
+              <img
+                src="./images/Utilisé_dans_plusieurs_section/homme_assis_table.webp"
+                alt="Un guitariste"
+              />
+              <img
+                src="./images/Utilisé_dans_plusieurs_section/paella_2.webp"
+                alt="Une Paella"
+              />
+              <img
+                src="./images/Utilisé_dans_plusieurs_section/miniature_for_slider.webp"
+                alt="Alexandre Gimenez, Guitariste/Chanteur Flamenco"
+              />
+            </div>
+          </aside>
+          <p class="section_2_h2_paragraphe">
+            <span class="section_2_h2_first_p_border">
+              Je vous propose un service complet à domicile pour faire de votre
+              événement un succès inoubliable. À partir de 15 personnes,
+              offrez-vous une délicieuse paella, préparée avec soin, accompagnée
+              d'une animation flamenco envoûtante. Mon répertoire musical varié
+              allant des classiques du flamenco aux adaptations modernes, vous
+              offre un large choix. Vous avez la liberté de choisir la musique
+              pour une expérience unique et personnalisée.</span
+            >
+            <br /><br />
+            Je m'appelle Alejandro Gimenez, je suis quelqu'un de simple et
+            passionné, aimant le partage et le contact. Je ne prétends pas
+            rivaliser avec de grosses structures événementielles, cependant, je
+            suis convaincu que je peux apporter une touche unique à vos fêtes,
+            les rendant ainsi encore plus mémorables.
+            <br /><br />
+            Basé en Gironde, je suis disponible dans toute la région pour
+            répondre à vos besoins. Pour réserver mes services ou obtenir un
+            devis gratuit, contactez-moi dès maintenant via le formulaire de
+            contact, ou par téléphone au [numéro de téléphone], ou par email à
+            [adresse email]. Laissez-moi prendre en charge les détails et vous
+            offrir une expérience culinaire et artistique inoubliable!
+          </p>
+          <br /><br />
+          <button
+            class="section_2_h2_button"
+            onclick="window.location.href='./Contact/contact.html';"
+          >
+            Demandez un Devis Gratuitement
+          </button>
+        </article>
+      </section>
+      <!-- ********************************* -->
+      <section class="section_3">
+        <div class="section_3_clip_path_1"></div>
+        <!-- ********************************* -->
+        <article class="section_3_flamenco">
+          <aside class="section_3_flamenco_text">
+            <div class="section_3_flamenco_text_titre">
+              <p>Authentique Concert Flamenco en Direct</p>
+              <h2>Performance Musicale</h2>
+            </div>
+            <img
+              src="./images/Section_3_Prestation//img_flamenco.webp"
+              alt="Un homme tenant une guitare a coté d'une paella"
+            />
+            <p>
+              Mes spectacles de flamenco offrent une expérience musicale unique.
+              Je propose un large éventail de styles, allant des classiques
+              traditionnels aux adaptations contemporaines. Le choix de la
+              musique est entièrement personnalisé, vous laissant ainsi la
+              liberté de sélectionner les morceaux qui correspondent à votre
+              événement.
+            </p>
+            <button
+              onclick="window.location.href='./Prestations/Flamenco/prestation_Flamenco.html';"
+            >
+              En savoir Plus
+            </button>
+          </aside>
+          <aside class="section_3_flamenco_img">
+            <img
+              src="./images/Section_3_Prestation/img_flamenco.webp"
+              alt="Un homme tenant une guitare a coté d'une paella"
+            />
+          </aside>
+        </article>
+        <div class="section_3_trait_separateur_article"></div>
+        <article class="section_3_paella">
+          <aside class="section_3_paella_img">
+            <img
+              src="./images/Section_3_Prestation/img_paella.webp"
+              alt="Une paella"
+            />
+          </aside>
+          <aside class="section_3_paella_text">
+            <div class="section_3_paella_text_titre">
+              <p>Tradition Culinaire</p>
+              <h2>Traîteur Paella</h2>
+            </div>
+            <img
+              src="./images/Section_3_Prestation/img_paella.webp"
+              alt="Une paella"
+            />
+            <p>
+              Ravissez vos papilles avec mes services de traiteur de paella,
+              préparée avec les meilleurs ingrédients et cuite à la perfection.
+              Laissez-moi, en tant que professionnel, aggrémenter votre
+              événement avec les saveurs de la tradition culinaire espagnole.
+            </p>
+            <button
+              onclick="window.location.href='./Prestations/Paella/prestation_Paella.html';"
+            >
+              En savoir Plus
+            </button>
+          </aside>
+        </article>
+      </section>
+      <!-- ********************************* -->
+      <section class="section_4">
+        <header>
+          <h2><span>Explorez ma</span>Galerie</h2>
+          <div class="section_4_trait_underline_titre"></div>
+          <p>
+            Découvrez mes spectacles de flamenco et mes services de traiteur de
+            paella à travers des photos.<br />Elles reflètent fidèlement
+            l'atmosphère et le service que je propose chez AG, sans artifices ni
+            exagérations.
+          </p>
+        </header>
+        <div class="section_4_img_et_video">
+          <video
+            controls
+            class="section_4_video_mobilefirst"
+            preload="metadata"
+            poster="./images/Utilisé_dans_plusieurs_section/miniature.webp"
+          >
+            <source
+              src="./images/Section_4_Galerie/Alejandro_Gimenez _Que_bonito_es_el_amor.mp4"
+              type="video/mp4"
+            />
+            Votre navigateur ne supporte pas la lecture de vidéos.
+          </video>
+          <img
+            src="./images/Utilisé_dans_plusieurs_section/paella_2.webp"
+            alt="Une paella"
+          />
+          <video
+            controls
+            class="section_4_video_query1024"
+            preload="metadata"
+            poster="./images/Utilisé_dans_plusieurs_section/miniature.webp"
+          >
+            <source
+              src="./images/Section_4_Galerie/Alejandro_Gimenez _Que_bonito_es_el_amor.mp4"
+              type="video/mp4"
+            />
+            Votre navigateur ne supporte pas la lecture de vidéos.
+          </video>
+          <img
+            src="./images/Utilisé_dans_plusieurs_section/homme_assis_table.webp"
+            alt="Un homme tenant une guitare, assis autour d'une table ou se trouve une paella"
+          />
+        </div>
+        <button
+          class="section_4_button"
+          onclick="window.location.href='./Galerie/galerie.html';"
+        >
+          Visiter ma Galerie
+        </button>
+      </section>
+      <!-- ********************************* -->
+      <section class="section_5"></section>
+      <!-- ********************************* -->
+      <footer>
+        <h2><span>Élevons votre</span>Évenement</h2>
+        <p>
+          Contactez-moi dès aujourd'hui pour apporter la passion de la musique
+          flamenco et / ou la saveur d'une authentique paella à votre fête.
+        </p>
+        <button onclick="window.location.href='./Contact/contact.html';">
+          Contactez-moi
+        </button>
+        <small
+          >Copyright <i>&#169;</i> 2024 - AG - Paella et Flamenco<br />Made by
+          Zairth</small
+        >
+      </footer>
+    </main>
+  </body>
+</html>

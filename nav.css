@@ -1,0 +1,415 @@
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+main {
+    overflow: hidden;
+}
+
+.nav_bouton_reservez_mode_burger { /* Bouton Réservez Dans menu Burger */
+    padding: calc(5px + 0.3vmin);
+    background-color: #C33028;
+    border: 2px solid #C33028;
+    color: #F2E73D;
+    cursor: pointer;
+    font-family: "Lugrasimo", cursive;
+    font-size: clamp(16px, 0.4vw + 1.8vh, 25px);
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+} .nav_bouton_reservez_mode_burger:hover { 
+    color: #F2E73D;
+    background-color: transparent;
+} 
+.nav_links li:nth-child(6) { /* Bouton Réservez Hors menu Burger */
+    display: none;
+} 
+
+
+/*************************************************/
+
+.above_nav_coordinate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    width: 100%;
+    background-color: #de7669;
+    z-index: 666;
+} .above_nav_coordinate_container_for_border {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: fit-content;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.905);
+    list-style-type: none;
+    border-bottom: 2px solid #f2e63de1;
+    padding: 3px;
+}
+
+.above_nav_coordinate li {
+    padding-inline: 10px;
+    font-family: "Quicksand", sans-serif;
+    font-size: clamp(16px, 0.4vw + 1.6vh, 25px);
+    font-style: italic;
+} .above_nav_coordinate li i {
+    padding-right: 5px;
+    font-style: normal;
+}
+
+.header_nav {
+    position: sticky;
+    top: 0px;
+    height: fit-content;
+    width: 100%;
+    background-color: #D65544;
+    box-shadow: 0px 5px 4px 0px rgba(0,0,0,0.2);
+    z-index: 666;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+}
+
+/*************************************************/
+
+.logo_href_menu_burger { /* Logo Positionné avec le menu Burger */
+    display: inline-block;
+    height: calc(40px + 4vmin);
+    width: calc(40px + 4vmin);
+    max-height: 80%;
+    min-height: 40px;
+    margin-left: 2vmin;
+    background-image: url("./images/Logo_et_separateur/logo_navbar.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 666;
+} .nav_links li:nth-child(1) {
+    display: none;
+}
+
+/**************** Navlink Burgered ****************/
+
+.nav_links {
+    position: absolute;
+    top: 60%;
+    left: -5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+    scale: 0;
+    transition: all 0.4s ease-in-out;
+    transform-origin: top right;
+}
+
+.nav_links_burger_open {
+    transform-origin: top right;
+    scale: 1;
+    left: 0;
+    top: 100%;
+    transition: all 0.4s ease-in-out;
+}.nav_links::before {
+    content:'';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #D65544;
+    box-shadow: 0px 5px 4px 0px rgba(0,0,0,0.2);
+    border-radius: 0 0 50% 50%;
+    transition: border-radius 0.6s ease-in-out;
+} .nav_links_burger_open::before {
+    transition: border-radius 0.6s ease-in-out;
+    border-radius: 0;
+}
+
+.nav_links li, .nav_presta  {
+    position: relative;
+    padding: 10px 0;
+    width: auto;
+    text-align: center;
+    border-bottom: 0.5px solid;
+    border-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    border-image-slice: 1;
+    font-family: "Lugrasimo", cursive;
+    font-size: clamp(16px, 0.4vw + 1.8vh, 25px);
+    z-index: 666;
+} .nav_links li:nth-child(5)  {
+    padding-bottom: 20px;
+    border-bottom: none;
+}
+
+.nav_presta {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+} .nav_presta span {
+    position: relative;
+} .nav_presta span::after {
+    content: '\21B2';
+    margin-left: 8px;
+    height: 20px;
+    width: 20px;
+} .nav_presta span.open::after {
+    content: '\21B0';
+}
+
+.nav_presta li {
+    display: none;
+    padding: 0 0;
+    border-bottom: none;
+    list-style-type: none;
+} .nav_presta span::selection, .nav_presta li::selection {
+    background-color: transparent;
+}
+
+.nav_links li a:not(.logo_href), .nav_presta span {
+    color: rgba(243, 231, 61, 0.90);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+} .nav_links li a:not(.logo_href):hover, .nav_presta span:hover {
+    color: rgba(255, 255, 255, 0.90);
+    filter: drop-shadow(0px 0px 5px #ffffff);
+}
+/**************** Bouton Burger ****************/
+
+.container_button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: calc(40px + 4vmin);
+    width: calc(40px + 4vmin);
+    max-height: 80%;
+    min-height: 40px;
+    margin-right: 2vmin;
+    z-index: 1;
+}
+
+.container_button button {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 70%;
+    height: 70%;
+    padding: 2px;
+    border: none;
+    background-color: #C33028;
+    border-radius: 2px;
+    cursor: pointer;
+} .ligne_1, .ligne_2, .ligne_3 {
+    position: absolute;
+    height: 2px;
+    width: 60%;
+    background-color: #fff;
+} .ligne_1 {
+    top: 30%;
+} .ligne_2 {
+    top: 50%;
+} .ligne_3 {
+    top: 70%;
+}
+
+.container_button .ligne_1, .container_button .ligne_3 {
+    transition: transform 0.25s ease-in-out,
+                background-color 0.8s ease-in-out,
+                top 0.25s 0.25s ease-in-out;
+} .container_button.anim-active .ligne_1, .container_button.anim-active .ligne_3 {
+    top: 50%;
+    background-color: #F2E73D;
+    transition: top 0.25s ease-in-out,
+                background-color 0.35s ease-in-out,
+                transform 0.25s 0.25s ease-in-out;
+  }
+  
+.container_button.anim-active .ligne_1 {
+    transform: rotate(45deg);
+}
+  
+.container_button .ligne_2 {
+    transition: 0.3s 0.3s ease-in-out;
+} .container_button.anim-active .ligne_2 {
+    filter: opacity(0);
+    transition: 0.3s ease-in-out;
+}
+  
+.container_button.anim-active .ligne_3 {
+    transform: rotate(-45deg);
+}    
+
+/***************** MEDIA QUERY ****************/
+
+@media (hover: none) { /* Appareils sans capacité d'Hover */
+    .nav_links li a:hover {
+        color: rgba(243, 231, 61, 0.90);
+        filter: none;
+    } .nav_links .logo_href:hover {
+        scale: 1;
+    } .logo_href_menu_burger {
+        filter: drop-shadow(0px 0px 5px #F2E73D);
+    }
+
+    .nav_bouton_reservez_mode_non_burger:hover {
+        background-color: #C33028;
+    } .nav_bouton_reservez_mode_burger:hover { 
+        background-color: #C33028;
+    } 
+}
+
+@media screen and (max-width: 191px) { /* Réadapter la Nav-Burger */
+    .nav_links {
+        top: 90%;
+        transform-origin: top;
+    } .nav_links_burger_open {
+        transform-origin: top;
+    } .container_button {
+        justify-content: center;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 225px) { /* Bouton réservé sans les fleches */
+    nav {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-height: 300px) and (max-width: 200px) { /* Apple Watch - Retirer la sticky Nav */
+    .header_nav {
+        position: relative;
+        top: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) { /* Menu Burger Supprimé & Réorganisation du layout des sections */
+    .logo_href_menu_burger {
+        display: none;
+    } .container_button {
+        display: none;
+    } .nav_links_burger_open {
+        display: none;
+    }.nav_links::before {
+        display: none;
+    } .nav_bouton_reservez_mode_burger {
+        display: none;
+    }
+
+    nav {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: normal;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .nav_links {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        width: 100%;
+        height: 100%;
+        scale: 1;
+        transition: none;
+        transform-origin: none;
+    } .logo_href { /* Logo sans le menu burger */
+        height: calc(40px + 7vmin);
+        width: calc(40px + 7vmin);
+        min-height: 40px;
+        max-height: 110px;
+        max-width: 110px;
+        margin-left: 0;
+        background-image: url("./images/Logo_et_separateur/logo_navbar.svg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        scale: 1;
+        filter: drop-shadow(none);
+        transition: all 0.2s ease-in-out;
+        z-index: 667;
+    } .logo_href:hover {
+        scale: 1.1;
+        filter: drop-shadow(0px 0px 5px #F2E73D);
+    }
+    .nav_links li, .nav_presta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: auto;
+        height: 100%;
+        text-align: center;
+        border-bottom: none;
+        border-image: none;
+        border-image-slice: 0;
+        font-family: "Lugrasimo", cursive;
+        font-size: clamp(16px, 0.4vw + 1vh, 25px);
+        text-wrap: nowrap;
+    } .nav_links li:nth-child(1) {
+        display: flex;
+        padding-left: 0;
+        width: 20%;
+    } .nav_links li:nth-child(2), .nav_presta, .nav_links li:nth-child(4), .nav_links li:nth-child(5) {
+        justify-content: center;
+        width: 15%;
+    }
+
+    .nav_presta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } .nav_presta li {
+        display: none;
+    }
+
+    .nav_links li:nth-child(5) {
+        padding-bottom: 0;
+        padding-right: 0;
+        border-bottom: none;
+    } .nav_links li:nth-child(6) { /* Bouton réserver */
+        display: flex;
+        width: 20%;
+    } .nav_bouton_reservez_mode_non_burger {
+        padding: 10px;
+        padding: calc(5px + 0.3vmin);
+        background-color: #C33028;
+        border: 2px solid #C33028;
+        color: #F2E73D;
+        cursor: pointer;
+        font-family: "Lugrasimo", cursive;
+        font-size: clamp(16px, 0.4vw + 1.8vh, 25px);
+        font-weight: 600;
+        transition: all 0.2s ease-in-out;
+    } .nav_bouton_reservez_mode_non_burger:hover {
+        color: #F2E73D;
+        background-color: transparent;
+    }
+}

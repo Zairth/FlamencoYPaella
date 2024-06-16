@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- <a href="http://www.freepik.com">Some images may be Designed by Freepik Designer / Freepik</a> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+    name="description"
+    content="Contactez Alejandro Gimenez pour des prestations de traiteur de paella et des animations flamenco en Gironde. Demandez un devis gratuitement dès maintenant !"
+  />
+  <meta name="robots" content="index, follow" />
+  <meta
+    property="og:title"
+    content="Contact - AG Paella & Flamenco - Alejandro Gimenez"
+  />
+  <meta
+    property="og:description"
+    content="Contactez Alejandro Gimenez pour des prestations de traiteur de paella et des animations flamenco en Gironde. Demandez un devis gratuitement dès maintenant !"
+  />
+  <meta property="og:image" content="https://i.imgur.com/wZekl8A.png" />
+    <link
+      rel="shortcut icon"
+      href="../images/Logo_et_separateur/myFavicon.svg"
+    />
+    <link href="../nav.css" rel="stylesheet" />
+    <link href="contact.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="../nav.js" defer></script>
+
+    <title>Contact | AG - Paella et Flamenco à Domicile</title>
+  </head>
+
+  <body>
+    <!-- ********************************* -->
+    <header class="header_nav">
+      <aside class="above_nav_coordinate">
+        <div class="above_nav_coordinate_container_for_border">
+          <li><i>&#x2706;</i>06.56.98.49.02</li>
+          <li><i>&#x2709;</i>ginofama@hotmail.com</li>
+        </div>
+      </aside>
+      <nav>
+        <a class="logo_href_menu_burger" href="../index.html"></a>
+        <button
+          class="nav_bouton_reservez_mode_burger"
+          onclick="window.location.href='contact.html';"
+        >
+          Réservez
+        </button>
+        <div class="container_button">
+          <button onclick="toggleMenuBurger()" class="btn_burger">
+            <div class="ligne_1"></div>
+            <div class="ligne_2"></div>
+            <div class="ligne_3"></div>
+          </button>
+        </div>
+        <div class="nav_links">
+          <li><a class="logo_href" href="../index.html"></a></li>
+          <li><a href="../A_Propos/a_propos.html">A Propos</a></li>
+          <ul class="nav_presta">
+            <span onclick="prestaMenuToggle()">Prestations</span>
+            <li>
+              <a href="../Prestations/Paella/prestation_Paella.html"
+                >Traiteur de Paella</a
+              >
+            </li>
+            <li>
+              <a href="../Prestations/Flamenco/prestation_Flamenco.html"
+                >Concert Flamenco</a
+              >
+            </li>
+          </ul>
+          <li><a href="../Galerie/galerie.html">Galerie</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <button
+              class="nav_bouton_reservez_mode_non_burger"
+              onclick="window.location.href='contact.html';"
+            >
+              Réservez
+            </button>
+          </li>
+        </div>
+      </nav>
+    </header>
+    <!-- ********************************* -->
+    <main>
+      <header>
+        <div>
+          <h1>Contactez-moi</h1>
+          <p>
+            Vous avez des questions, souhaitez demander un devis gratuitement,
+            ou avez besoin d'information supplémentaire ?<br />N'hésitez pas !
+            Je serai ravis de pouvoir répondre à votre demande.
+          </p>
+        </div>
+      </header>
+      <section>
+        <form method="post" action="script.php">
+          <div class="input_nom_prenom">
+            <div class="input_nom">
+              <label for="nom">Nom :</label>
+              <input
+                type="text"
+                id="nom"
+                name="nom"
+                placeholder="Entrez votre Nom"
+                required
+              />
+            </div>
+            <div class="input_prenom">
+              <label for="prenom">Prénom :</label>
+              <input
+                type="text"
+                id="prenom"
+                name="prenom"
+                placeholder="Entrez votre Prénom"
+                required
+              />
+            </div>
+          </div>
+          <div class="input_phone_mail">
+            <div class="input_phone">
+              <label for="tel">Téléphone :</label>
+              <input
+                type="tel"
+                id="tel"
+                name="tel"
+                placeholder="Votre Numéro de Téléphone"
+                required
+              />
+            </div>
+            <div class="input_mail">
+              <label for="email">E-Mail :</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Votre Adresse e-mail"
+                required
+              />
+            </div>
+          </div>
+          <div class="input_textarea">
+            <label for="message">Message :</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Entrez votre message ..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Envoyer</button>
+        </form>
+        <aside>
+          <div class="h2_logo">
+            <h2><span>Disponible sur toute la</span>Gironde</h2>
+            <img
+              src="images/logo_map.webp"
+              alt="Un homme jouant de la guitare, à coté d'un plat de Paella"
+            />
+          </div>
+          <img
+            class="map"
+            src="images/map_gironde.png"
+            alt="Carte de la Gironde"
+          />
+        </aside>
+      </section>
+      <footer>
+        <img src="images/logo_header.webp" alt="Logo du site" />
+        <div class="coordonne">
+          <h2>Coordonnées</h2>
+          <ul>
+            <li>06.56.98.49.02</li>
+            <li>ginofama@hotmail.com</li>
+          </ul>
+        </div>
+        <div class="navigation">
+          <h2>Navigation</h2>
+          <ul>
+            <li><a href="../index.html" target="_blank">Accueil</a></li>
+            <li>
+              <a href="../A_Propos/a_propos.html" target="_blank">A Propos</a>
+            </li>
+            <li>
+              <a
+                href="../Prestations/Paella/prestation_Paella.html"
+                target="_blank"
+                >Traîteur de Paella</a
+              >
+            </li>
+            <li>
+              <a
+                href="../Prestations/Flamenco/prestation_Flamenco.html"
+                target="_blank"
+                >Représentation Flamenco</a
+              >
+            </li>
+            <li>
+              <a href="../Galerie/galerie.html" target="_blank">Galerie</a>
+            </li>
+          </ul>
+        </div>
+        <small
+          >Copyright <i>&#169;</i> 2024 - AG - Paella et Flamenco<br />Made by
+          Zairth</small
+        >
+      </footer>
+    </main>
+  </body>
+</html>

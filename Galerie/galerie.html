@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- <a href="http://www.freepik.com">Some images may be Designed by Freepik Designer / Freepik</a> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+    name="description"
+    content="Explorez la galerie d'Alejandro Gimenez, comprenant des photos de spectacles de flamenco et des événements de traiteur de paella en Gironde."
+  />
+  <meta name="robots" content="index, follow" />
+  <meta
+    property="og:title"
+    content="Galerie - AG Paella & Flamenco - Alejandro Gimenez"
+  />
+  <meta
+    property="og:description"
+    content="Explorez la galerie d'Alejandro Gimenez, comprenant des photos de spectacles de flamenco et des événements de traiteur de paella en Gironde."
+  />
+  <meta property="og:image" content="https://i.imgur.com/wZekl8A.png" />
+    <link
+      rel="shortcut icon"
+      href="../images/Logo_et_separateur/myFavicon.svg"
+    />
+    <link href="../nav.css" rel="stylesheet" />
+    <link href="../footer.css" rel="stylesheet" />
+    <link href="galerie.css" rel="stylesheet" />
+    <link href="Lightbox/lightbox.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="../nav.js" defer></script>
+    <script src="galerie.js" defer></script>
+    <script src="Lightbox/lightbox-plus-jquery.min.js" defer></script>
+
+    <title>Galerie | AG - Paella et Flamenco à Domicile</title>
+  </head>
+
+  <body>
+    <!-- ********************************* -->
+    <header class="header_nav">
+      <aside class="above_nav_coordinate">
+        <div class="above_nav_coordinate_container_for_border">
+          <li><i>&#x2706;</i>06.56.98.49.02</li>
+          <li><i>&#x2709;</i>ginofama@hotmail.com</li>
+        </div>
+      </aside>
+      <nav>
+        <a class="logo_href_menu_burger" href="../index.html"></a>
+        <button
+          class="nav_bouton_reservez_mode_burger"
+          onclick="window.location.href='../Contact/contact.html';"
+        >
+          Réservez
+        </button>
+        <div class="container_button">
+          <button onclick="toggleMenuBurger()" class="btn_burger">
+            <div class="ligne_1"></div>
+            <div class="ligne_2"></div>
+            <div class="ligne_3"></div>
+          </button>
+        </div>
+        <div class="nav_links">
+          <li><a class="logo_href" href="../index.html"></a></li>
+          <li><a href="../A_Propos/a_propos.html">A Propos</a></li>
+          <ul class="nav_presta">
+            <span onclick="prestaMenuToggle()">Prestations</span>
+            <li>
+              <a href="../Prestations/Paella/prestation_Paella.html"
+                >Traiteur de Paella</a
+              >
+            </li>
+            <li>
+              <a href="../Prestations/Flamenco/prestation_Flamenco.html"
+                >Concert Flamenco</a
+              >
+            </li>
+          </ul>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="../Contact/contact.html">Contact</a></li>
+          <li>
+            <button
+              class="nav_bouton_reservez_mode_non_burger"
+              onclick="window.location.href='../Contact/contact.html';"
+            >
+              Réservez
+            </button>
+          </li>
+        </div>
+      </nav>
+    </header>
+    <!-- ********************************* -->
+    <main>
+      <header>
+        <div class="div_titre">
+          <div class="trait_gauche"></div>
+          <h1>Visualisez mes services</h1>
+          <div class="trait_droite"></div>
+        </div>
+        <img
+          src="images/header_galerie.webp"
+          alt="3 Images représentatives des prestations"
+        />
+        <p>
+          Prenez le temps de visiter ma Galerie, une fenêtre ouverte vers les
+          services que je proposes.
+        </p>
+      </header>
+      <section class="section_galerie">
+          <a href="images/img_1.png" data-lightbox="maGalerie" data-title="Evenement n°1">
+            <img src="images/img_1.png" alt="Une fête" />
+          </a>
+          <a href="images/img_2.png" data-lightbox="maGalerie" data-title="Evenement n°2">
+            <img src="images/img_2.png" alt="Une fête" />
+          </a>
+          <a href="images/img_3.png" data-lightbox="maGalerie" data-title="Paella du 10/02/2024">
+            <img src="images/img_3.png" alt="Une paella" />
+          </a>
+          <a href="images/img_4.png" data-lightbox="maGalerie" data-title="Paella du 23/02/2024">
+            <img src="images/img_4.png" alt="Une paella" />
+          </a>
+          <a href="images/img_5.png" data-lightbox="maGalerie" data-title="Evenement n°5">
+            <img src="images/img_5.png" alt="Une fête" />
+          </a>
+          <a href="images/img_6.png" data-lightbox="maGalerie" data-title="Evenement n°6">
+            <img src="images/img_6.png" alt="Une fête" />
+          </a>
+          <a href="images/img_7.png" data-lightbox="maGalerie" data-title="Paella du 06/04/2024">
+            <img src="images/img_7.png" alt="Une paella" />
+          </a>
+          <a href="images/img_8.png" data-lightbox="maGalerie" data-title="Paella du 18/04/2024">
+            <img src="images/img_8.png" alt="Une paella" />
+          </a>
+          <a href="images/img_9.png" data-lightbox="maGalerie" data-title="Evenement n°9">
+            <img src="images/img_9.png" alt="Une fête" />
+          </a>
+          <a href="images/img_10.png" data-lightbox="maGalerie" data-title="Peinture réalisé par un membre de ma famille">
+            <img src="images/img_10.png" alt="Une paella en peinture" />
+          </a>
+        </div>
+      </section>
+      <!-- ********************************* -->
+      <section class="section_5"></section>
+      <!-- ********************************* -->
+    </main>
+    <footer>
+      <h2><span>Élevons votre</span>Évenement</h2>
+      <p>
+        Contactez-moi dès aujourd'hui pour apporter la passion de la musique
+        flamenco et / ou la saveur d'une authentique paella à votre fête.
+      </p>
+      <button onclick="window.location.href='../Contact/contact.html';">
+        Contactez-moi
+      </button>
+      <small
+        >Copyright <i>&#169;</i> 2024 - AG - Paella et Flamenco<br />Made by
+        Zairth</small
+      >
+    </footer>
+    <script src="Lightbox/lightbox.js"></script>
+  </body>
+</html>

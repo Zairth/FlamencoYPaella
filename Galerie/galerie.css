@@ -1,0 +1,167 @@
+
+.nav_links li:nth-child(4) {
+    filter: drop-shadow(0px 0px 5px #ffffff);
+} .nav_links li:nth-child(4) a {
+    color: white;
+}
+
+/******************** FONT-PARAMETRE ********************/
+
+h1 {
+    font-family: "Lugrasimo", cursive;
+    font-size: clamp(18px, 2vw + 2.5vh, 35px);
+} h2 {
+    font-family: "Lugrasimo", cursive;
+    font-size: clamp(17px, 1.5vw + 2vh, 30px);
+} p {
+    font-family: "Quicksand", sans-serif;
+    font-size: clamp(16px, 0.4vw + 1.6vh, 25px);
+    font-weight: 450;
+    line-height: calc(20px + 1.5vmin);
+}
+
+/******************** BOUTTON / HOVER ********************/
+
+main button {
+    background-color: #C33028;
+    border: 2px solid #C33028;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+    max-width: 80%;
+    font-family: "Lugrasimo", cursive;
+    font-size: clamp(16px, 0.4vw + 1.8vh, 25px);
+}
+
+main button:hover {
+    color: #C33028;
+    background-color: transparent;
+}
+
+/************ MAIN HEADER *************/
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+} main::before {
+    content:'';
+    position: absolute;
+    background: linear-gradient(180deg,#f2e73d 0%, rgba(255,255,255,0) 95%);
+    height: 30%;
+    max-height: 100px;
+    width: 100%;
+    z-index: -1;
+}
+
+main header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1300px;
+    width: 80%;
+    color: #C33028;
+    margin: calc(60px + 2vmax) 0;
+    text-align: center;
+    row-gap: calc(30px + 2vmax);
+}
+
+.div_titre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+} .div_titre h1 {
+    padding: 10px 20px;
+    width: 100%;
+} .div_titre .trait_gauche, .div_titre .trait_droite {
+    height: 3px;
+    width: 50%;
+    background: radial-gradient(ellipse farthest-corner at center center, #C33028 0%, #ffffff 90%);
+} .trait_gauche {
+    display: none;
+}
+
+main header img {
+    width: 105%;
+    max-width: 1000px;
+    filter: drop-shadow(0px 0px 5px black);
+}
+
+main header p {
+    max-width: 430px;
+    border-right: 2px solid #c330287f;
+    border-left: 2px solid #c330287f;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+/************ SECTION - GALERIE *************/
+
+.section_galerie {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    grid-gap: 20px;
+    height: auto;
+    width: 80%;
+    max-width: 1300px;
+    padding-bottom: 60px;
+} .section_galerie::before {
+    content: '';
+    position: absolute;
+    background-color: #f2f1f6;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+}
+
+.section_galerie .container_img {
+    position: relative;
+}
+
+.section_galerie img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    place-self: center;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+} .section_galerie img:hover {
+    transform: scale(1.1);
+}
+
+@media (hover: none) {
+    .section_galerie img:hover {
+        transform: scale(1);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+        /************* HEADER *************/
+
+        .div_titre h1 {
+            padding: 0 20px;
+            width: auto;
+        } .div_titre .trait_gauche, .div_titre .trait_droite {
+            height: 3px;
+            width: 20%;
+        } .trait_gauche {
+            display: inline-block;
+        }
+
+        /************* GALERIE *************/
+
+        .section_galerie::before {
+            background: radial-gradient(circle farthest-corner at center center, #f2f1f6 95%, rgba(0, 255, 0, 0) 100%);
+        }
+}
