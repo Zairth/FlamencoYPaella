@@ -23,10 +23,10 @@ try {
     //Server settings
     $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+    $mail->Host       = 'smtp.gmail.com';                       //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'luca.gim33@gmail.com';                     //SMTP username
-    $mail->Password   = 'jjrrhpdbmvulcavz';                               //SMTP password
+    $mail->Username   = 'luca.gim33@gmail.com';                 //SMTP username
+    $mail->Password   = 'jjrrhpdbmvulcavz';                     //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
     $mail->CharSet    = 'UTF-8';
@@ -40,7 +40,7 @@ try {
 
     //Recipients
     $mail->setFrom('luca.gim33@gmail.com', 'AG - Paella & Flamenco');
-    $mail->addAddress('drzerthum@live.fr', 'Mowa');     //Add a recipient
+    $mail->addAddress('drzerthum@live.fr', 'Mowa');       //Add a recipient
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
