@@ -300,7 +300,7 @@ main button:hover {
     height: calc(14px + 0.1vmin);
 }
 
-/***************** MEDIA QUERY *******************/ 
+/***************** MEDIA QUERY *******************/
 
 @media (hover: none) {
     .img_sous_header::before {
@@ -423,5 +423,9 @@ main button:hover {
 
     .main_container ul .underline_titre {
         display: none;
+    }
+
+    .main_container button {
+        max-width: 900px;
     }
 }
